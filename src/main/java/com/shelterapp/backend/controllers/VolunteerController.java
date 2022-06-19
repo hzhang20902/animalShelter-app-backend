@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 
 @RestController
@@ -36,6 +37,13 @@ public class VolunteerController {
 
 //        @GetMapping("/{id}")
 //        public ResponseEntity get
+
+
+//        @GetMapping("/userId")
+//        public UUID getVolunteerIdByUserId(){
+//
+//                return userRepository.findByVolunteerId();
+//        }
 
         @PostMapping
         public void createVolunteer(@RequestBody Volunteer volunteer) {
