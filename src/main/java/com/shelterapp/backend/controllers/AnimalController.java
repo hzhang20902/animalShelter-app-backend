@@ -19,7 +19,7 @@ public class AnimalController {
     //JSON packet key string must match exactly with column name, case and syntax
     //if not posting booleans, GET request to see the formatting of the column names
     //copy and paste from the ResponseBody, the exact column name
-    //test git push
+    //test git push2
 
     @Autowired
     private AnimalService animalService;
