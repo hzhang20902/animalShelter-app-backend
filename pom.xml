@@ -101,7 +101,7 @@
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
                 <configuration>
-                    <url>${env.JDBC_DATABASE_URL}</url>
+                    <url>postgresql://ec2-52-22-136-117.compute-1.amazonaws.com:5432/d7bllqau0fb4c</url>
                 </configuration>
             </plugin>
         </plugins>
