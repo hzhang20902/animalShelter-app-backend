@@ -14,7 +14,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/volunteers")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://animalshelterfrontend.herokuapp.com/")
 public class VolunteerController {
 
     //JSON packet key string must match exactly with column name, case and syntax
