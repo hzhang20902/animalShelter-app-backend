@@ -14,11 +14,12 @@
     <groupId>com.backend</groupId>
     <artifactId>shelter-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>shelter-app-backend</name>
     <description>Shelter App Backend with Spring Boot</description>
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
@@ -85,10 +86,7 @@
             <artifactId>flyway-core</artifactId>
             <version>8.5.1</version>
         </dependency>
-
     </dependencies>
-
-
 
     <build>
         <plugins>
@@ -101,6 +99,18 @@
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>8.0.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals><goal>copy-dependencies</goal></goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
